@@ -3,517 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De Egipto a Canaán: 20 Señales de Fe</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        scout: {
-                            green: '#2d5a27',      /* Bosque */
-                            lightgreen: '#437a3c',
-                            earth: '#8b5a2b',      /* Tierra */
-                            sand: '#f4ecd8',       /* Fondo pergamino/arena */
-                            orange: '#e65c00',     /* Fuego / Zarza */
-                            yellow: '#f5b041'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Nunito', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <title>Nudos y Amarras - Club Chicos del Barrio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            background-color: #f4ecd8;
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238b5a2b' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-        .hero-pattern {
-            background-color: #2d5a27;
-            background-image: radial-gradient(#437a3c 2px, transparent 2px);
-            background-size: 30px 30px;
-        }
-        /* Transiciones suaves para tarjetas */
-        .knot-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .knot-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(45, 90, 39, 0.2);
-        }
-        /* Estilos para el Quiz */
-        .quiz-btn {
-            transition: all 0.2s;
-        }
-        .quiz-btn:disabled {
-            cursor: not-allowed;
-            opacity: 0.8;
-        }
-        .quiz-btn.correct {
-            background-color: #2d5a27 !important; /* scout-green */
-            color: white !important;
-            border-color: #2d5a27 !important;
-            transform: scale(1.02);
-            box-shadow: 0 0 15px rgba(45, 90, 39, 0.5);
-        }
-        .quiz-btn.incorrect {
-            background-color: #ef4444 !important; /* red-500 */
-            color: white !important;
-            border-color: #ef4444 !important;
-        }
+        body { background-color: #f4f6f8; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .navbar { background-color: #2c3e50; }
+        .navbar-brand, .nav-link { color: #ecf0f1 !important; cursor: pointer; }
+        .header-banner { background-color: #e67e22; color: white; padding: 2rem 0; text-align: center; }
+        .card { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: none; border-radius: 10px; margin-bottom: 20px; }
+        .card-header { background-color: #34495e; color: white; font-weight: bold; border-radius: 10px 10px 0 0 !important; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 0 0 10px 10px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .btn-quiz { margin: 5px; width: 100%; text-align: left; white-space: normal; }
+        .hidden { display: none; }
+        footer { background-color: #2c3e50; color: #bdc3c7; padding: 20px 0; text-align: center; margin-top: 40px; }
+        .whatsapp-alert { background-color: #d4edda; border-color: #c3e6cb; border-left: 6px solid #28a745; border-radius: 8px; color: #155724; }
     </style>
 </head>
-<body class="text-stone-800 antialiased font-sans">
+<body>
 
-    <!-- HERO SECTION -->
-    <header class="hero-pattern text-white py-12 px-4 shadow-xl border-b-8 border-scout-orange relative overflow-hidden">
-        <div class="max-w-6xl mx-auto text-center relative z-10">
-            <div class="inline-block p-4 bg-scout-earth bg-opacity-30 rounded-full mb-4 shadow-inner">
-                <i class="fa-solid fa-fire-flame-curved text-5xl text-scout-yellow drop-shadow-md"></i>
-            </div>
-            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider drop-shadow-lg">
-                De Egipto a Canaán
-            </h1>
-            <h2 class="text-2xl md:text-3xl font-bold text-scout-yellow mb-6 drop-shadow-md">
-                20 Señales de Fe
-            </h2>
-            <p class="max-w-2xl mx-auto text-lg bg-black bg-opacity-20 p-4 rounded-xl backdrop-blur-sm shadow-sm mb-8">
-                Aprende los nudos esenciales del campamento. Cada amarra es un paso en el desierto, recordando cómo Dios guio a Moisés y al pueblo de Israel hacia la Tierra Prometida.
-            </p>
-
-            <!-- NAVEGACIÓN -->
-            <div class="flex justify-center flex-wrap gap-4 relative z-20">
-                <button onclick="showSection('diccionario')" id="nav-diccionario" class="px-6 py-3 rounded-full font-bold text-white bg-scout-orange shadow-lg hover:bg-orange-600 transition-colors border-2 border-transparent focus:outline-none">
-                    <i class="fa-solid fa-book-open mr-2"></i> Diccionario
-                </button>
-                <button onclick="showSection('calendario')" id="nav-calendario" class="px-6 py-3 rounded-full font-bold text-scout-green bg-white shadow-lg hover:bg-stone-100 transition-colors border-2 border-scout-green focus:outline-none">
-                    <i class="fa-regular fa-calendar-check mr-2"></i> Práctica Diaria
-                </button>
-                <button onclick="showSection('quiz')" id="nav-quiz" class="px-6 py-3 rounded-full font-bold text-scout-green bg-white shadow-lg hover:bg-stone-100 transition-colors border-2 border-scout-green focus:outline-none">
-                    <i class="fa-solid fa-gamepad mr-2"></i> Zona de Práctica
-                </button>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <span class="navbar-brand fw-bold">🏕️ Bicamporí Enviados 2027</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" onclick="showSection('diccionario')">📖 Diccionario de Nudos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" onclick="showSection('quiz')">🎯 Zona de Práctica (Quiz)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-warning" onclick="showSection('diaria')">📅 Práctica Diaria</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!-- Decoración SVG -->
-        <svg class="absolute bottom-0 left-0 w-full h-12 -mb-1 text-scout-sand fill-current" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,111.47,196.59,101.4Z"></path>
-        </svg>
-    </header>
+    </nav>
 
-    <!-- MAIN CONTENT -->
-    <main class="max-w-7xl mx-auto px-4 py-12">
+    <!-- Encabezado -->
+    <div class="header-banner">
+        <div class="container">
+            <h1 class="fw-bold">El Camino de Moisés: 20 Señales de Fe</h1>
+            <p class="lead mb-0">Preparación de Nudos y Amarras - Club Chicos del Barrio</p>
+        </div>
+    </div>
 
+    <div class="container mt-4">
+        
         <!-- SECCIÓN 1: DICCIONARIO DE NUDOS -->
-        <section id="section-diccionario" class="mb-16 block">
-            <div class="flex items-center mb-8">
-                <i class="fa-solid fa-map-location-dot text-3xl text-scout-orange mr-4"></i>
-                <h3 class="text-3xl font-black text-scout-green uppercase tracking-wide">La Ruta de los Nudos</h3>
+        <div id="sec-diccionario">
+            <h2 class="text-center fw-bold mb-4">Diccionario de Nudos</h2>
+            <div class="row" id="knots-container">
+                <!-- Se llena con JS -->
             </div>
-            <!-- Grid Container for JS -->
-            <div id="knots-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Las tarjetas se insertarán aquí con JS -->
-            </div>
-        </section>
-
-        <!-- SECCIÓN: CALENDARIO DE PRÁCTICA -->
-        <section id="section-calendario" class="mb-16 hidden">
-            <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
-                <div class="flex items-center">
-                    <i class="fa-regular fa-calendar-check text-3xl text-scout-orange mr-4"></i>
-                    <h3 class="text-3xl font-black text-scout-green uppercase tracking-wide">Misión del Día</h3>
-                </div>
-                <div class="bg-white px-5 py-2 rounded-xl shadow border border-stone-200">
-                    <span id="calendar-today-date" class="font-bold text-scout-earth capitalize">Cargando fecha...</span>
-                </div>
-            </div>
-            
-            <div id="calendar-status" class="mb-6 text-lg text-center md:text-left"></div>
-            
-            <!-- Contenedor para los 2 nudos diarios -->
-            <div id="calendar-knots-container" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <!-- Tarjetas del día insertadas por JS -->
-            </div>
-        </section>
+        </div>
 
         <!-- SECCIÓN 2: ZONA DE PRÁCTICA (QUIZ) -->
-        <section id="section-quiz" class="mb-16 hidden">
-            <div class="bg-white p-1 rounded-3xl shadow-xl border-4 border-scout-earth transform transition-transform duration-300">
-                <div class="bg-amber-50 rounded-2xl p-6 md:p-10 border-2 border-dashed border-scout-earth">
-                    <div class="text-center mb-6 flex flex-col sm:flex-row justify-between items-center">
-                        <div class="text-left mb-4 sm:mb-0">
-                            <h3 class="text-3xl font-black text-scout-earth uppercase flex items-center">
-                                <i class="fa-solid fa-gavel text-4xl mr-3 text-scout-orange"></i> Modo Prueba del Juez
-                            </h3>
-                            <p class="text-stone-600 mt-2 text-lg">El juez leerá la función. ¿Qué nudo usarás?</p>
-                        </div>
-                        <div class="flex flex-col items-center sm:items-end gap-2">
-                            <div class="bg-scout-earth text-white px-6 py-3 rounded-xl shadow-inner font-bold text-xl flex items-center">
-                                <i class="fa-solid fa-star text-scout-yellow mr-2"></i> Puntuación: <span id="score-counter" class="ml-2">0 / 0</span>
-                            </div>
-                            <button onclick="startQuiz()" class="text-sm bg-stone-200 hover:bg-stone-300 text-stone-700 px-4 py-2 rounded-lg font-bold transition-colors border border-stone-300 w-full sm:w-auto flex justify-center items-center shadow-sm">
-                                <i class="fa-solid fa-rotate-left mr-2"></i> Reiniciar Prueba
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div class="max-w-3xl mx-auto bg-white p-6 md:p-8 rounded-xl shadow-md border-t-8 border-scout-orange relative">
-                        <span class="absolute top-0 right-0 bg-scout-orange text-white text-xs font-bold px-3 py-1 rounded-bl-lg"><i class="fa-solid fa-question-circle mr-1"></i> PREGUNTA</span>
-                        <h4 class="text-sm uppercase font-bold text-gray-400 tracking-wider mb-4 text-center">La Función Es:</h4>
-                        
-                        <p id="quiz-function-text" class="text-xl md:text-2xl font-bold text-scout-green mb-8 min-h-[4rem] flex items-center justify-center text-center">
-                            Cargando función...
-                        </p>
-                        
-                        <div id="quiz-options-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <!-- Botones generados por JS -->
-                        </div>
+        <div id="sec-quiz" class="hidden">
+            <div class="card p-4 mx-auto shadow" style="max-width: 800px;">
+                <h2 class="text-center fw-bold mb-3 text-primary">Simulacro de Juez</h2>
+                <p class="text-center text-muted">El juez leerá la función. Debes saber qué nudo aplicar.</p>
+                
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span id="quiz-progress" class="badge bg-secondary fs-6">Pregunta 1 / 20</span>
+                    <span class="badge bg-success fs-6">Puntos: <span id="quiz-score">0</span></span>
+                </div>
+
+                <hr>
+
+                <div id="quiz-content">
+                    <h4 id="quiz-question" class="mb-4 text-center fw-bold" style="line-height: 1.5;"></h4>
+                    <div id="quiz-options" class="row g-2">
+                        <!-- Botones de opciones -->
                     </div>
                 </div>
+                
+                <div id="quiz-result" class="hidden text-center mt-3">
+                    <h3 class="fw-bold text-success">¡Prueba Finalizada!</h3>
+                    <p class="fs-4">Tu puntuación: <span id="final-score"></span> de 20</p>
+                    <button class="btn btn-primary btn-lg mt-2" onclick="startQuiz()">🔄 Reiniciar Prueba</button>
+                </div>
+                
+                <!-- Botón manual para reiniciar en cualquier momento -->
+                <div class="text-center mt-4 pt-3 border-top" id="btn-restart-container">
+                    <button class="btn btn-outline-danger btn-sm" onclick="startQuiz()">Reiniciar Prueba Ahora</button>
+                </div>
             </div>
-        </section>
-
-        <!-- TWO COLUMN LAYOUT: EVALUATION & EXTRA TIPS -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <!-- CRITERIOS DE EVALUACIÓN -->
-            <section class="bg-white p-8 rounded-2xl shadow-lg border-l-8 border-scout-green">
-                <h3 class="text-2xl font-black text-scout-green mb-6 flex items-center">
-                    <i class="fa-solid fa-clipboard-check mr-3 text-scout-orange"></i> Criterios de Evaluación
-                </h3>
-                <ul class="space-y-4">
-                    <li class="flex items-start">
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-scout-green font-bold mr-4">1</div>
-                        <div>
-                            <h4 class="font-bold text-lg text-stone-800">Función y Uso Correcto (Técnica)</h4>
-                            <p class="text-stone-600 text-sm mt-1">Saber aplicarlo donde corresponde (ej: asta, argolla) y usar la cantidad/grosor correcto de cuerdas.</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-scout-green font-bold mr-4">2</div>
-                        <div>
-                            <h4 class="font-bold text-lg text-stone-800">Estética del Nudo</h4>
-                            <p class="text-stone-600 text-sm mt-1">El nudo debe verse presentable, simétrico y ordenado. (ej: cuerdas sobrantes similares).</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-scout-green font-bold mr-4">3</div>
-                        <div>
-                            <h4 class="font-bold text-lg text-stone-800">Trabajo en Equipo y Disciplina</h4>
-                            <p class="text-stone-600 text-sm mt-1">Juego limpio, espíritu cristiano y coordinación al dar el relevo sin riesgo de caída.</p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- CONSEJOS EXTRA DEL MANUAL -->
-            <section class="bg-scout-green p-8 rounded-2xl shadow-lg text-white">
-                <h3 class="text-2xl font-black text-scout-yellow mb-6 flex items-center">
-                    <i class="fa-solid fa-lightbulb mr-3"></i> Para el Instructor
-                </h3>
-                <p class="mb-4 text-green-50 text-sm font-semibold">Consejos para abarcar la enseñanza al 100% basados en el manual del evento:</p>
-                <ul class="space-y-3 text-sm text-green-100">
-                    <li class="flex gap-2"><i class="fa-solid fa-check-circle text-scout-yellow mt-1"></i> <span><strong>Soportes reales:</strong> Obliga a los niños a practicar en varas de bambú o argollas, no dejen los nudos "en el aire". Nudos como la "boca de lobo" se califican mal si no están en el asta.</span></li>
-                    <li class="flex gap-2"><i class="fa-solid fa-check-circle text-scout-yellow mt-1"></i> <span><strong>Cuidado con los grosores:</strong> Ten a mano cuerdas de diferentes grosores para enseñar nudos como la <em>Vuelta de Escota</em>, y pide que las mojen para probar el <em>Pescador</em>.</span></li>
-                    <li class="flex gap-2"><i class="fa-solid fa-check-circle text-scout-yellow mt-1"></i> <span><strong>Mecánica del Relevo:</strong> Practica que al terminar el nudo, el niño corra y le "dé la mano" al siguiente; es una regla estricta del juez.</span></li>
-                </ul>
-            </section>
         </div>
-    </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-stone-900 text-stone-400 py-8 text-center border-t-4 border-scout-earth relative overflow-hidden">
-        <div class="relative z-10">
-            <p class="font-bold tracking-wide uppercase text-sm mb-2 text-stone-300">
-                <i class="fa-solid fa-campground text-scout-orange mr-2"></i> Autoría del Club Chicos del Barrio
-            </p>
-            <p class="text-xs mb-3 text-stone-500">Evento: Bicamporí Enviados • Diseño de apoyo didáctico interactivo</p>
-            <p class="text-xs text-stone-500 font-semibold">&copy; 2026 Todos los derechos reservados.</p>
+        <!-- SECCIÓN 3: PRÁCTICA DIARIA -->
+        <div id="sec-diaria" class="hidden">
+            <h2 class="text-center fw-bold mb-4">Entrenamiento Diario</h2>
+            <div id="daily-practice-content">
+                <!-- Contenido generado por JS -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p class="mb-1 fw-bold fs-5">Club Chicos del Barrio</p>
+            <p class="mb-0 text-muted small">© 2026 - Todos los derechos reservados.</p>
+            <p class="mb-0 text-muted small">Material de estudio para el Bicamporí Enviados 2027.</p>
         </div>
     </footer>
 
-    <!-- JAVASCRIPT LOGIC -->
     <script>
-        // Arreglo completo de 20 nudos
-        const knotsData = [
-            { id: 1, name: "Cuadrado o japonés", func: "Une dos cuerdas del mismo grosor que están en tensión.", ref: "Moisés y su familia en Egipto.", obs: "Debe realizarse con 2 cuerdas del mismo grosor.", vid: "QLiArjqf4iU" },
-            { id: 2, name: "As de guía", func: "Crea un lazo fijo en el extremo de una cuerda; sirve para asegurar objetos o unir cuerdas.", ref: "La zarza ardiente y el llamado de Moisés.", obs: "Debe realizarse con una sola cuerda y colocarse en el suelo.", vid: "yLxisOKD2ho" },
-            { id: 3, name: "Cabeza de turco", func: "Nudo decorativo, usado para hacer cañuelas.", ref: "Moisés recibe la dirección de Dios para volver a Egipto.", obs: "Requiere práctica; empieza despacio. Al finalizar se debe poner en un pañuelo.", vid: "FEZWCzt1rGI" },
-            { id: 4, name: "Pescador", func: "Une cuerdas del mismo grosor, mojadas o resbaladizas.", ref: "Las señales de Dios delante de Faraón.", obs: "Se debe realizar con 2 cuerdas del mismo grosor mojadas.", vid: "HnKa6iejUr0" },
-            { id: 5, name: "Barrilito", func: "Es el nudo más utilizado para unir secciones de monofilamentos de nylon.", ref: "Moisés y el inicio de su misión en Egipto.", obs: "Mínimo 3 vueltas.", vid: "bfq1KcMLRgA" },
-            { id: 6, name: "Cirujano", func: "Nudo para atar paquetes. Lleva este nombre pues era utilizado para primeros auxilios.", ref: "La salida del pueblo de Israel de Egipto.", obs: "Se realiza con una sola cuerda.", vid: "9jdvaxqylHo" },
-            { id: 7, name: "Margarita", func: "Reduce la longitud de una cuerda o refuerza un tramo desgastado.", ref: "El pueblo de Israel en el desierto, sostenido por Dios.", obs: "Se realiza con una sola cuerda.", vid: "X9SSs7gNGos" },
-            { id: 8, name: "Middleman", func: "Crea una gaza (lazo) fija en la mitad de la cuerda sin usar los extremos.", ref: "Protección y cuidado de Dios durante el éxodo.", obs: "Se realiza en el asta.", vid: "ZK61hgal9HA" },
-            { id: 9, name: "Dos medios cotes", func: "Amarra momentáneamente un cabo a una argolla o a un poste.", ref: "La liberación y el cargar con las riquezas de Egipto.", obs: "Se realiza en el asta.", vid: "K8VvXwVvUaw" },
-            { id: 10, name: "Vuelta de escota", func: "Une cuerdas de diferente grosor.", ref: "El pueblo avanzando con recursos distintos, pero unidos por Dios.", obs: "Se realiza con cuerdas de diferente grosor.", vid: "ns4BL2KzJis" },
-            { id: 11, name: "Vuelta de braza o leñador", func: "Sirve para maniobrar, levantar o mover un tronco o poste.", ref: "El campamento moviéndose por el desierto.", obs: "Se realiza en el asta.", vid: "xE9nhN9qp9U" },
-            { id: 12, name: "Balso por seno", func: "Permite subir o bajar a una persona o un bulto con seguridad.", ref: "El cuidado de Dios al sostener a su pueblo.", obs: "Se realiza con una sola cuerda.", vid: "Nx4KLn7G9hg" },
-            { id: 13, name: "Calabrote", func: "Une dos cuerdas del mismo grosor que soportarán tirones fuertes o remolques.", ref: "Las pruebas fuertes en el camino del desierto.", obs: "Se realiza con 2 cuerdas del mismo grosor.", vid: "bYxXoGFAy4Y" },
-            { id: 14, name: "Boca de lobo o zarpa de gato", func: "Nudo de enganche para cuerdas de grosor mediano; reparte el esfuerzo por igual.", ref: "La fortaleza del pueblo al caminar unido.", obs: "Se realiza en el asta.", vid: "DLcwnu_2d58" },
-            { id: 15, name: "Encapillar", func: "Su función principal es decorativa. Lo encontrarás en pulseras, collares, llaveros y otros objetos artesanales.", ref: "Ayuda y sostén de Dios en los momentos difíciles.", obs: "Se realiza con una sola cuerda.", vid: "Xq_gT83Dxvw" },
-            { id: 16, name: "Fugitivo", func: "Permite bajar una pendiente con una cuerda que se puede soltar desde abajo.", ref: "La salida apresurada de Egipto.", obs: "Se realiza en el asta, sino se desarma, está incorrecto.", vid: "ELRjnYLRtgs" },
-            { id: 17, name: "Presilla de alondra", func: "Conecta una cuerda corta a un objeto con agujero, como un silbato o gafete.", ref: "Organización del campamento de Israel.", obs: "Se realiza en la argolla.", vid: "hGP44kfb4aw" },
-            { id: 18, name: "Silla de bombero", func: "Forma una silla con dos gazas para subir o bajar a una persona sentada.", ref: "Dios sosteniendo a su pueblo con cuidado.", obs: "Se realiza con solo una cuerda.", vid: "RBvAl9nMsCc" },
-            { id: 19, name: "Tensor de carpa", func: "Sirve para tensar carpas o tiendas de campaña.", ref: "El tabernáculo y la vida de campamento en el desierto.", obs: "Se realiza con una sola cuerda.", vid: "DjrZO7Q8zzQ" },
-            { id: 20, name: "Arnés de hombre", func: "Sirve para crear una gaza o lazo fijo que no se desliza en cualquier parte de una cuerda.", ref: "La firmeza y sujeción de la fe en Dios.", obs: "Se realiza con una sola cuerda.", vid: "1GWclcrQUTU" }
+        // BASE DE DATOS DE NUDOS
+        const nudos = [
+            { id: 1, nombre: "Cuadrado o japonés", funcion: "Une dos cuerdas del mismo grosor que están en tensión.", video: "QLiArjqf4iU" },
+            { id: 2, nombre: "As de guía", funcion: "Crea un lazo fijo en el extremo de una cuerda; sirve para asegurar objetos o unir cuerdas.", video: "yLxisOKD2ho" },
+            { id: 3, nombre: "Cabeza de turco", funcion: "Nudo decorativo, usado para hacer cañuelas.", video: "FEZWCzt1rGI" },
+            { id: 4, nombre: "Pescador", funcion: "Une cuerdas del mismo grosor, mojadas o resbaladizas.", video: "HnKa6iejUr0" },
+            { id: 5, nombre: "Barrilito", funcion: "Es el nudo más utilizado para unir secciones de monofilamentos de nylon.", video: "bfq1KcMLRgA" },
+            { id: 6, nombre: "Cirujano", funcion: "Nudo para atar paquetes. Lleva este nombre pues era utilizado para primeros auxilios.", video: "9jdvaxqylHo" },
+            { id: 7, nombre: "Margarita", funcion: "Reduce la longitud de una cuerda o refuerza un tramo desgastado.", video: "X9SSs7gNGos" },
+            { id: 8, nombre: "Middleman", funcion: "Crea una gaza (lazo) fija en la mitad de la cuerda sin usar los extremos.", video: "ZK61hgal9HA" },
+            { id: 9, nombre: "Dos medios cotes", funcion: "Amarra momentáneamente un cabo a una argolla o a un poste.", video: "K8VvXwVvUaw" },
+            { id: 10, nombre: "Vuelta de escota", funcion: "Une cuerdas de diferente grosor.", video: "ns4BL2KzJis" },
+            { id: 11, nombre: "Vuelta de braza o leñador", funcion: "Sirve para maniobrar, levantar o mover un tronco o poste.", video: "xE9nhN9qp9U" },
+            { id: 12, nombre: "Balso por seno", funcion: "Permite subir o bajar a una persona o un bulto con seguridad.", video: "Nx4KLn7G9hg" },
+            { id: 13, nombre: "Calabrote", funcion: "Une dos cuerdas del mismo grosor que soportarán tirones fuertes o remolques.", video: "bYxXoGFAy4Y" },
+            { id: 14, nombre: "Boca de lobo o zarpa de gato", funcion: "Nudo de enganche para cuerdas de grosor mediano; reparte el esfuerzo por igual.", video: "DLcwnu_2d58" },
+            { id: 15, nombre: "Encapillar", funcion: "Su función principal es decorativa. Lo encontrarás en pulseras, collares, llaveros y otros objetos artesanales.", video: "Xq_gT83Dxvw" },
+            { id: 16, nombre: "Fugitivo", funcion: "Permite bajar una pendiente con una cuerda que se puede soltar desde abajo.", video: "ELRjnYLRtgs" },
+            { id: 17, nombre: "Presilla de alondra", funcion: "Conecta una cuerda corta a un objeto con agujero, como un silbato o gafete.", video: "hGP44kfb4aw" },
+            { id: 18, nombre: "Silla de bombero", funcion: "Forma una silla con dos gazas para subir o bajar a una persona sentada.", video: "RBvAl9nMsCc" },
+            { id: 19, nombre: "Tensor de carpa", funcion: "Sirve para tensar carpas o tiendas de campaña.", video: "DjrZO7Q8zzQ" },
+            { id: 20, nombre: "Arnés de hombre", funcion: "Sirve para crear una gaza o lazo fijo que no se desliza en cualquier parte de una cuerda.", video: "1GWclcrQUTU" }
         ];
 
-        // Plantilla HTML para una tarjeta de nudo (Reutilizable)
-        function createKnotCardHTML(knot) {
+        // LÓGICA DE NAVEGACIÓN
+        function showSection(sectionId) {
+            document.getElementById('sec-diccionario').classList.add('hidden');
+            document.getElementById('sec-quiz').classList.add('hidden');
+            document.getElementById('sec-diaria').classList.add('hidden');
+            
+            document.getElementById('sec-' + sectionId).classList.remove('hidden');
+
+            if(sectionId === 'quiz') startQuiz();
+            if(sectionId === 'diaria') renderDailyPractice();
+        }
+
+        // FUNCIÓN AUXILIAR PARA MEZCLAR ARREGLOS (FISHER-YATES)
+        function shuffleArray(array) {
+            let arr = [...array];
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        // LÓGICA DEL DICCIONARIO
+        function renderDictionary() {
+            const container = document.getElementById('knots-container');
+            container.innerHTML = nudos.map(nudo => createKnotCard(nudo)).join('');
+        }
+
+        function createKnotCard(nudo) {
             return `
-                <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col knot-card border border-gray-200 border-t-4 border-t-scout-orange relative">
-                    <div class="absolute top-0 left-0 bg-scout-green text-white font-bold px-3 py-1 rounded-br-lg text-sm z-10 shadow-sm">
-                        #${knot.id}
-                    </div>
-                    <div class="aspect-video relative bg-stone-900 border-b border-gray-200">
-                        <iframe 
-                            class="absolute top-0 left-0 w-full h-full" 
-                            src="https://www.youtube.com/embed/${knot.vid}" 
-                            title="${knot.name}" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="p-5 flex-grow flex flex-col">
-                        <h4 class="text-xl font-black text-stone-800 mb-3 text-center uppercase tracking-tight">${knot.name}</h4>
-                        <div class="mb-4">
-                            <p class="text-sm text-stone-700 bg-stone-50 p-3 rounded-lg border-l-4 border-scout-earth shadow-inner leading-relaxed">
-                                <strong><i class="fa-solid fa-wrench text-scout-earth mr-1"></i> Función:</strong> ${knot.func}
-                            </p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center fs-5">
+                            ${nudo.id}. ${nudo.nombre}
                         </div>
-                        <div class="mb-4 text-xs text-stone-600 flex items-start gap-2">
-                            <i class="fa-solid fa-book-bible text-scout-orange mt-0.5"></i>
-                            <p><strong>Ref. Bíblica:</strong> <em>${knot.ref}</em></p>
-                        </div>
-                        <div class="mt-auto pt-3 border-t border-gray-100 text-xs text-scout-green font-bold flex items-start gap-2">
-                            <i class="fa-solid fa-circle-exclamation mt-0.5"></i>
-                            <p>${knot.obs}</p>
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text fw-semibold mb-3" style="min-height: 50px;">" ${nudo.funcion} "</p>
+                            <div class="mt-auto video-container">
+                                <iframe src="https://www.youtube.com/embed/${nudo.video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
             `;
         }
 
-        // Lógica de Navegación
-        function showSection(sectionId) {
-            const sections = ['diccionario', 'calendario', 'quiz'];
-            
-            sections.forEach(id => {
-                const section = document.getElementById(`section-${id}`);
-                const btn = document.getElementById(`nav-${id}`);
-                
-                if (id === sectionId) {
-                    section.classList.remove('hidden');
-                    section.classList.add('block');
-                    
-                    // Botón activo
-                    btn.classList.replace('bg-white', 'bg-scout-orange');
-                    btn.classList.replace('text-scout-green', 'text-white');
-                    btn.classList.replace('border-scout-green', 'border-transparent');
-                } else {
-                    section.classList.remove('block');
-                    section.classList.add('hidden');
-                    
-                    // Botón inactivo
-                    btn.classList.replace('bg-scout-orange', 'bg-white');
-                    btn.classList.replace('text-white', 'text-scout-green');
-                    btn.classList.replace('border-transparent', 'border-scout-green');
-                }
-            });
-
-            // Iniciar quiz si es seleccionado y no ha empezado
-            if(sectionId === 'quiz' && shuffledQuestions.length === 0) {
-                startQuiz();
-            }
-        }
-
-        // Renderizado del Diccionario
-        function renderKnotCards() {
-            const container = document.getElementById('knots-container');
-            container.innerHTML = '';
-            knotsData.forEach(knot => {
-                container.innerHTML += createKnotCardHTML(knot);
-            });
-        }
-
-        // Renderizado del Calendario Diario
-        function renderCalendar() {
-            const container = document.getElementById('calendar-knots-container');
-            const statusText = document.getElementById('calendar-status');
-            const todayDateElement = document.getElementById('calendar-today-date');
-
-            const now = new Date();
-            // Fecha de inicio ajustada a HOY (29 Octubre 2026) para que inicie inmediatamente
-            const startDate = new Date(2026, 9, 29);
-            // Fecha fin: 28 Marzo 2027
-            const endDate = new Date(2027, 2, 28, 23, 59, 59);
-
-            // Formato de fecha bonita
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            todayDateElement.textContent = "Hoy: " + now.toLocaleDateString('es-ES', options);
-
-            // Calcular diferencia de días omitiendo horas para que sea exacto por fecha
-            const todayMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-            const startMidnight = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());
-            
-            const diffTime = todayMidnight - startMidnight;
-            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-
-            // Si es antes de que inicie
-            if (now < startDate) {
-                statusText.innerHTML = `<div class="bg-amber-100 text-amber-800 p-4 rounded-xl border border-amber-300"><i class="fa-solid fa-clock mr-2"></i> El entrenamiento diario comenzará el <strong>29 de Octubre de 2026</strong>. ¡Falta muy poco!</div>`;
-                container.innerHTML = '';
-                return;
-            }
-
-            // Si ya terminó la campaña
-            if (now > endDate) {
-                statusText.innerHTML = `<div class="bg-scout-green text-white p-4 rounded-xl shadow"><i class="fa-solid fa-flag-checkered mr-2"></i> El ciclo de entrenamiento finalizó el <strong>28 de Marzo de 2027</strong>. ¡Esperamos que todos estén listos para el Bicamporí Enviados!</div>`;
-                container.innerHTML = '';
-                return;
-            }
-
-            // Estamos en el rango de fechas. Son 20 nudos (2 por día = 10 días de ciclo)
-            // Se calcula el día del ciclo en el que nos encontramos usando el módulo
-            const cycleDay = diffDays % 10; 
-            const index1 = cycleDay * 2;
-            const index2 = index1 + 1;
-
-            const knot1 = knotsData[index1];
-            const knot2 = knotsData[index2];
-
-            statusText.innerHTML = `
-                <p class="text-stone-600">
-                    <strong>¡Atención Acampantes!</strong> Tu misión para hoy es practicar y dominar a la perfección estos dos nudos. 
-                    <span class="text-sm bg-stone-200 px-2 py-1 rounded ml-2 text-stone-500">Día ${cycleDay + 1} del ciclo (Repetición continua)</span>
-                </p>
-            `;
-            
-            container.innerHTML = createKnotCardHTML(knot1) + createKnotCardHTML(knot2);
-        }
-
-        // Lógica del Quiz interactivo (Fisher-Yates)
-        let currentCorrectKnot = null;
-        let shuffledQuestions = [];
+        // LÓGICA DE LA ZONA DE PRÁCTICA (QUIZ)
+        let quizQuestions = [];
         let currentQuestionIndex = 0;
         let score = 0;
         let isAnswering = false;
 
-        // Función para mezclar un arreglo al azar (Fisher-Yates)
-        function shuffleArray(array) {
-            let currentIndex = array.length, randomIndex;
-            while (currentIndex !== 0) {
-                randomIndex = Math.floor(Math.random() * currentIndex);
-                currentIndex--;
-                [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-            }
-            return array;
-        }
-
         function startQuiz() {
-            // Mezclar estrictamente las 20 preguntas sin modificar el arreglo original
-            shuffledQuestions = shuffleArray([...knotsData]);
+            quizQuestions = shuffleArray(nudos); // Mezclamos las 20 preguntas
             currentQuestionIndex = 0;
             score = 0;
-            document.getElementById('score-counter').textContent = `0 / 0`;
-            loadNextQuestion();
-        }
-
-        function loadNextQuestion() {
             isAnswering = false;
-            
-            // Verificar si terminamos el quiz (20 preguntas)
-            if (currentQuestionIndex >= shuffledQuestions.length) {
-                document.getElementById('quiz-function-text').innerHTML = `¡Prueba completada!<br><span class="text-3xl text-scout-earth">Puntaje Final: ${score} / ${shuffledQuestions.length}</span>`;
-                
-                const optionsContainer = document.getElementById('quiz-options-container');
-                optionsContainer.innerHTML = `
-                    <button onclick="startQuiz()" class="col-span-1 sm:col-span-2 bg-scout-orange text-white font-black py-4 px-4 rounded-xl shadow-lg hover:bg-orange-600 transition-colors transform hover:scale-105">
-                        <i class="fa-solid fa-rotate-right mr-2"></i> REINICIAR PRUEBA DEL JUEZ
-                    </button>
-                `;
-                return;
-            }
-            
-            // 1. Seleccionar la pregunta actual del arreglo ya mezclado
-            currentCorrectKnot = shuffledQuestions[currentQuestionIndex];
-            
-            // 2. Seleccionar 3 distractores aleatorios únicos
-            let distractors = [];
-            while(distractors.length < 3) {
-                let candidate = knotsData[Math.floor(Math.random() * knotsData.length)];
-                // Asegurarse de que no sea el correcto y no esté ya en los distractores
-                if(candidate.id !== currentCorrectKnot.id && !distractors.some(d => d.id === candidate.id)) {
-                    distractors.push(candidate);
-                }
-            }
-            
-            // 3. Combinar y mezclar las 4 opciones para que la correcta esté en posición aleatoria
-            let options = [currentCorrectKnot, ...distractors];
-            options = shuffleArray(options);
-            
-            // 4. Renderizar UI
-            document.getElementById('quiz-function-text').textContent = `"${currentCorrectKnot.func}"`;
-            
-            const optionsContainer = document.getElementById('quiz-options-container');
-            optionsContainer.innerHTML = '';
-            
-            options.forEach(opt => {
-                const btn = document.createElement('button');
-                btn.className = "quiz-btn bg-white border-2 border-stone-300 text-stone-700 font-bold py-4 px-4 rounded-xl shadow-sm hover:bg-stone-50 hover:border-scout-orange w-full flex items-center justify-center text-center";
-                btn.innerHTML = `<span class="text-lg">${opt.name}</span>`;
-                btn.onclick = () => checkAnswer(btn, opt.id === currentCorrectKnot.id, optionsContainer);
-                optionsContainer.appendChild(btn);
-            });
+
+            document.getElementById('quiz-result').classList.add('hidden');
+            document.getElementById('quiz-content').classList.remove('hidden');
+            document.getElementById('btn-restart-container').classList.remove('hidden');
+            updateQuizUI();
+            loadQuestion();
         }
 
-        function checkAnswer(clickedBtn, isCorrect, container) {
-            if (isAnswering) return; // Evitar múltiples clicks
-            isAnswering = true;
+        function loadQuestion() {
+            isAnswering = false;
+            let currentKnot = quizQuestions[currentQuestionIndex];
             
-            // Evaluar respuesta
-            if (isCorrect) {
+            // Texto de la función
+            document.getElementById('quiz-question').innerText = `"${currentKnot.funcion}"`;
+            
+            // Generar distractores (3 nudos diferentes al correcto)
+            let distractors = nudos.filter(n => n.id !== currentKnot.id);
+            distractors = shuffleArray(distractors).slice(0, 3);
+            
+            // Unir correcto + distractores y mezclar opciones
+            let options = shuffleArray([currentKnot, ...distractors]);
+
+            let optionsHtml = '';
+            options.forEach(opt => {
+                optionsHtml += `
+                    <div class="col-12 col-md-6">
+                        <button class="btn btn-outline-dark btn-quiz p-3" onclick="checkAnswer(${opt.id}, ${currentKnot.id}, this)">
+                            ${opt.nombre}
+                        </button>
+                    </div>
+                `;
+            });
+            document.getElementById('quiz-options').innerHTML = optionsHtml;
+        }
+
+        function checkAnswer(selectedId, correctId, btnElement) {
+            if (isAnswering) return;
+            isAnswering = true;
+
+            const allButtons = document.querySelectorAll('.btn-quiz');
+            allButtons.forEach(btn => btn.disabled = true);
+
+            if (selectedId === correctId) {
+                btnElement.classList.replace('btn-outline-dark', 'btn-success');
                 score++;
-                clickedBtn.classList.add('correct');
-                clickedBtn.innerHTML += ' <i class="fa-solid fa-check ml-2"></i>';
             } else {
-                clickedBtn.classList.add('incorrect');
-                clickedBtn.innerHTML += ' <i class="fa-solid fa-xmark ml-2"></i>';
-                
-                // Resaltar visualmente cuál era la respuesta correcta
-                const buttons = container.querySelectorAll('button');
-                buttons.forEach(btn => {
-                    if (btn.textContent.trim() === currentCorrectKnot.name) {
-                        btn.classList.add('correct');
+                btnElement.classList.replace('btn-outline-dark', 'btn-danger');
+                // Resaltar la correcta
+                allButtons.forEach(btn => {
+                    if (btn.innerText.includes(nudos.find(n => n.id === correctId).nombre)) {
+                        btn.classList.replace('btn-outline-dark', 'btn-success');
                     }
                 });
             }
-            
-            currentQuestionIndex++;
-            document.getElementById('score-counter').textContent = `${score} / ${currentQuestionIndex}`;
-            
-            // Deshabilitar todos los botones para que no toquen otra vez
-            const allButtons = container.querySelectorAll('button');
-            allButtons.forEach(b => b.disabled = true);
-            
-            // Cargar siguiente pregunta después de un breve delay
-            setTimeout(loadNextQuestion, 1500);
+
+            updateQuizUI();
+
+            setTimeout(() => {
+                currentQuestionIndex++;
+                if (currentQuestionIndex < quizQuestions.length) {
+                    loadQuestion();
+                    updateQuizUI();
+                } else {
+                    endQuiz();
+                }
+            }, 1500);
         }
 
-        // Inicializar al cargar la página
-        window.onload = () => {
-            renderKnotCards();
-            renderCalendar();
-        };
+        function updateQuizUI() {
+            document.getElementById('quiz-score').innerText = score;
+            let currentDisplay = currentQuestionIndex < 20 ? currentQuestionIndex + 1 : 20;
+            document.getElementById('quiz-progress').innerText = `Pregunta ${currentDisplay} / 20`;
+        }
 
+        function endQuiz() {
+            document.getElementById('quiz-content').classList.add('hidden');
+            document.getElementById('btn-restart-container').classList.add('hidden');
+            document.getElementById('quiz-result').classList.remove('hidden');
+            document.getElementById('final-score').innerText = score;
+        }
+
+        // LÓGICA DE PRÁCTICA DIARIA
+        function renderDailyPractice() {
+            const startDate = new Date('2026-10-29T00:00:00'); // Empieza hoy
+            const today = new Date();
+            
+            const diffTime = Math.abs(today - startDate);
+            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+            
+            let container = document.getElementById('daily-practice-content');
+
+            if (today < startDate) {
+                container.innerHTML = `<div class="alert alert-warning text-center">La práctica diaria comienza el 29 de octubre de 2026. ¡Prepárate!</div>`;
+                return;
+            }
+
+            // Ciclo de 10 días (2 nudos por día = 20 nudos)
+            const dayOfCycle = (diffDays % 10) + 1; 
+            const startIndex = (dayOfCycle - 1) * 2;
+            const dailyKnots = [nudos[startIndex], nudos[startIndex + 1]];
+
+            container.innerHTML = `
+                <div class="alert alert-info text-center mb-3">
+                    <h4 class="mb-1">Día ${dayOfCycle} de 10</h4>
+                    <p class="mb-0">Hoy es ${today.toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}.</p>
+                </div>
+                
+                <!-- NUEVO MENSAJE DE RECORDATORIO DE WHATSAPP -->
+                <div class="alert text-center shadow-sm mb-4 whatsapp-alert p-3">
+                    <h5 class="fw-bold mb-2">
+                        <span style="font-size: 1.3rem;">🟢 📱</span> ¡Misión por WhatsApp!
+                    </h5>
+                    <p class="mb-0" style="font-size: 1.05rem;">
+                        Realiza físicamente estos dos nudos y <strong>envía una foto o video mostrándolos al grupo de WhatsApp</strong> del club. ¡Demuestra a tu unidad que estás listo para el Bicamporí!
+                    </p>
+                </div>
+
+                <div class="row">
+                    ${dailyKnots.map(nudo => createKnotCard(nudo)).join('')}
+                </div>
+            `;
+        }
+
+        // INICIALIZACIÓN
+        window.onload = () => {
+            renderDictionary();
+        };
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
